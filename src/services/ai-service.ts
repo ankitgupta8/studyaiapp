@@ -4,8 +4,8 @@ import { splitTextIntoChunks, distributeQuestionCount, type TextChunk } from '@/
 
 // Initialize OpenAI client with Baseten configuration
 const client = new OpenAI({
-  apiKey: '52hEVKKE.KgInA6B3FxUNeFrmikh1mfxiWbWshu8Z',
-  baseURL: 'https://inference.baseten.co/v1',
+  apiKey: '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',
+  baseURL: 'https://integrate.api.nvidia.com/v1',
 });
 
 // AI Model type
@@ -18,16 +18,16 @@ const MODEL_CONFIGS: Record<AIModel, { model: string; name: string }> = {
     name: 'GPT OSS 120B',
   },
   'deepseek': {
-    model: 'deepseek-ai/DeepSeek-V3-0324',
-    name: 'DeepSeek V3 0324',
+    model: 'deepseek-ai/deepseek-v3.2',
+    name: 'DeepSeek V3.2',
   },
   'glm': {
-    model: 'zai-org/GLM-4.7',
+    model: 'z-ai/glm4.7',
     name: 'GLM 4.7',
   },
   'kimi': {
-    model: 'moonshotai/Kimi-K2.5',
-    name: 'Kimi K2.5',
+    model: 'moonshotai/kimi-k2-instruct-0905',
+    name: 'Kimi K2',
   },
   'minimax': {
     model: 'MiniMaxAI/MiniMax-M2.5',
